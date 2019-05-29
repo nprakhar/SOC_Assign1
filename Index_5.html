@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Assignment 1.5</title>
+    </head>
+    <body>
+        <center>
+            <form>
+                <input type="text" width="80%" height="10%" id="intxt" value="Enter URL"><br><br>
+                <input type="text" width="80%" height="10%" id="inwdt" value="Enter Width">
+                <input type="text" width="80%" height="10%" id="inhgt" value="Enter Height"><br><br>
+                <input type="button" width="10%" id="GO" value="GO" onclick="go()">
+            </form>
+            <iframe id="iframe" width="0px" height="0px"></iframe>
+        </center>
+        <script>
+            function go(){
+                document.getElementById("iframe").src=document.getElementById("intxt").value;
+                document.getElementById("iframe").width=document.getElementById("inwdt").value;
+                document.getElementById("iframe").height=document.getElementById("inhgt").value;
+            }
+        </script>
+    </body>
+</html>
